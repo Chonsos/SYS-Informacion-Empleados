@@ -194,7 +194,7 @@ class Paginas
 				$module =  "views/modules/usuarios.php";
 				break;
 				//////////////////////////////////////
-			case "violacionEliminarEmpleados":
+			case "violacionVerEmpleados":
 				$module =  "views/modules/usuarios.php";
 				break;
 				//////////////////////////////////////

@@ -3,7 +3,7 @@
 if (isset($_SESSION)) {
 	if (!$_SESSION["usuarioActivo"]) {
 		echo '<script>
-                window.location.href = "violacionEliminarEmpleados";
+                window.location.href = "violacionVerEmpleados";
               </script>';
 		exit();
 	}

@@ -234,7 +234,7 @@ if (isset($_GET["action"])) {
 				       alertify.set("notifier","position", "bottom-left");
 				       alertify.error("Usted no debe estar aqui");
                       </script>';
-	} else if ($_GET["action"] == "violacionEmpleados") {
+	} else if ($_GET["action"] == "violacionVerEmpleados") {
 		echo '<script>
 				       alertify.set("notifier","position", "bottom-left");
 				       alertify.error("Usted no debe estar aqui");

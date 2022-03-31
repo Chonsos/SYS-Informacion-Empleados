@@ -88,58 +88,6 @@ for (let campoEmail of camposEmail) {
   }
 }
 
-// Funcion para subir el archivo
-function subir_archivo() {
-  var input_file = $("#archivo")[0];
-  var file = input_file.files[0];
-
-  if ((typeof file === "object") && (file != null)) {
-
-    var dataa = new FormData();
-    dataa.append("file", file);
-
-    if ((typeof file === "object") && (file != null)) {
-
-      var dataa = new FormData();
-      dataa.append("file", file);
-
-
-      $.ajax({
-        url: "ajax/ajax.php",
-        method: "POST",
-        data: dataa,
-        cache: false,
-        contentType: false,
-        processData: false,
-
-        before: function () {
-          console.log("Subiendo Archivo");
-        },
-        success: function (respuesta) {
-          console.log(respuesta);
-          if (respuesta == "300") {
-            console.log("Archivo no permitido");
-          } else if (respuesta == "301") {
-            console.log("Archivo muy grande")
-          } else if (respuesta == "302") {
-            console.log("Fallo subir el archivo")
-          } else if (respuesta == "303") {
-            console.log("Archivo Vacio")
-          } else {
-
-          }
-        },
-        error: function (err) {
-          console.log("Ocurrio un error: " + err);
-        },
-        complete: function () {
-          console.log("Archivo Subido")
-        }
-      });
-    }
-  }
-}
-
 // Ajax para el buscador
 
 $(document).ready(function () {
@@ -174,6 +122,7 @@ $(document).ready(function () {
           <p class="bordeAbajo"></p>
           `;
           })
+          console.log(empleados);
 
           $('#resultado').html(vista); // Incluyo esa vista en un div con #resultado
           $('.formm').hide();
