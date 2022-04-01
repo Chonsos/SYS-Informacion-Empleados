@@ -43,7 +43,7 @@ if (isset($_POST["email"])) {
 
 # Seccion del buscador
 if (isset($_POST['search'])) {
-    $link = mysqli_connect('localhost', 'root', '', 'pdophp');
+    $link = mysqli_connect('localhost', 'root', '', 'dbsysinfoemp');
 
     $search = $_POST['search'];
 
