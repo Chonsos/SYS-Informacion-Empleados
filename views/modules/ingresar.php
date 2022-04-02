@@ -204,12 +204,7 @@ $ingresar->ingresarUsuarioController();
 <?php
 
 if (isset($_GET["action"])) {
-	if ($_GET["action"] == "registro_ok") {
-		echo '<script>
-				alertify.set("notifier","position", "bottom-left");
-				alertify.success("Bienvenido: ' . $_SESSION["user"] . ' ahora puede ingresar al sistema");
-              </script>';
-	} else if ($_GET["action"] == "ingresar_error") {
+	if ($_GET["action"] == "ingresar_error") {
 		echo '<script>
 				alertify.set("notifier","position", "bottom-left");
 				alertify.error("Ocurrio un error, debe de ingresar primero, o bien verifique bien sus datos");
@@ -229,6 +224,12 @@ if (isset($_GET["action"])) {
 				alertify.set("notifier","position", "bottom-left");
 				alertify.error("Error al ingresar, debe de ingresar un usuario y una contraseña");
               </script>';
+	} else if ($_GET["action"] == "ingresoIncorrecto") {
+		echo '<script>
+				alertify.set("notifier","position", "bottom-left");
+				alertify.error("Accion incorrecta");
+              </script>';
 	}
+	
 }
 ?>
