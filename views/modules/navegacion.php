@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET["action"])) {
     if (
-        $_GET["action"] == "usuarios" || $_GET["action"] == "admin_ok"
+        $_GET["action"] == "usuarios" || $_GET["action"] == "admin_ok" || $_GET["action"] == "registro_ok"
         || $_GET["action"] == "actualizado_ok" || $_GET["action"] == "actualizado_error"
         || $_GET["action"] == "actualizado_error_vacio" || $_GET["action"] == "actualizado_error_invalido"
         || $_GET["action"] == "obtenerIdUpdate_error_invalido" || $_GET["action"] == "obtenerIdUpdate_error_vacio"
