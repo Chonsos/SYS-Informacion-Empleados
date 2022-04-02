@@ -278,14 +278,12 @@ class MvcController
 
                     if (
                         $respuesta["nombre"] == "Admin"
-                        
+                        && password_verify($password, $respuesta["password"])
                     ) {
                         echo '<script>
                                        window.location.href = "ingresoIncorrecto";
                                       </script>';
-                    } 
-
-                    if (
+                    } else if (
                         $respuesta["nombre"] == $datos["nombre"]
                         && password_verify($password, $respuesta["password"])
                     ) {
