@@ -93,6 +93,10 @@ class Paginas
 				$module =  "views/modules/ingresar.php";
 				break;
 				//////////////////////////////////////
+			case "ingresoIncorrecto":
+				$module =  "views/modules/ingresar.php";
+				break;
+				//////////////////////////////////////
 			case "registroEmpleado_ok":
 				$module =  "views/modules/empleados.php";
 				break;
