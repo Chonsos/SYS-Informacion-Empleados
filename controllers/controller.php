@@ -281,7 +281,7 @@ class MvcController
                         
                     ) {
                         echo '<script>
-                                       window.location.href = "ingresar_error";
+                                       window.location.href = "ingresoIncorrecto";
                                       </script>';
                     } 
 
