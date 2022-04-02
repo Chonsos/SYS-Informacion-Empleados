@@ -240,6 +240,12 @@ alertify.success("Empleado registrado correctamente");
 }
 
 if (isset($_GET["action"])) {
+	if ($_GET["action"] == "ingresar_ok") {
+		echo '<script>
+				alertify.set("notifier","position", "bottom-left");
+				alertify.success("Bienvenido");
+              </script>';
+	}
 	if ($_GET["action"] == "violacionEditarUsuarios") {
 		echo '<script>
 				       alertify.set("notifier","position", "bottom-left");
