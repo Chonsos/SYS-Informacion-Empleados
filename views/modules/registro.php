@@ -24,6 +24,8 @@ $registro->registroUsuarioController();
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title>Plantilla de Alonso Villalobos</title>
+	<script src="https://kit.fontawesome.com/e632f1f723.js" crossorigin="anonymous"></script>
+
 
 	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
@@ -136,7 +138,6 @@ $registro->registroUsuarioController();
 								</div>
 
 							</div>
-
 
 							<div class="form-group">
 								<div class="icheck-material-white">
