@@ -145,7 +145,7 @@ $registro->registroUsuarioController();
 								</div>
 							</div>
 
-							<button type="submit" class="btn btn-light btn-block waves-effect waves-light">Registrar empleado</button>
+							<button type="submit" class="btn btn-light btn-block waves-effect waves-light">Registrar usuario</button>
 
 							<div class="form-row mt-4">
 								<div class="form-group mb-0 col-6">
