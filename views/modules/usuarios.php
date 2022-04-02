@@ -239,7 +239,7 @@ if (isset($_GET["action"])) {
 				       alertify.set("notifier","position", "bottom-left");
 				       alertify.error("Usted no debe estar aqui");
                       </script>';
-	} 
+	}
 }
 
 if (isset($_GET["action"])) {

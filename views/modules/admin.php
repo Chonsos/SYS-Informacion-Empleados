@@ -3,7 +3,6 @@
 $ingresarAdmin = new MvcController();
 $ingresarAdmin->ingresarAdminController();
 
-
 ?>
 
 <!DOCTYPE html>
