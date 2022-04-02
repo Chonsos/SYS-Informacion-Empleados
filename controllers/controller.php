@@ -121,10 +121,17 @@ class MvcController
 
                     $datos = $_GET["idBorrar"];
 
-                    $respuesta = Datos::borrarUsuarioModel($datos, "usuarios");
+                    if ($datos == "83"){
+                        echo '<script>
+                                     window.location.href = "usuarios";
+                                  </script>';
+                    } else {
 
+                    
+
+                    $respuesta = Datos::borrarUsuarioModel($datos, "usuarios");
+                }
                     if ($respuesta == "success") {
-                        $_SESSION["user"] = "";
                         echo '<script>
                                      window.location.href = "eliminado_ok";
                                   </script>';
@@ -221,6 +228,14 @@ class MvcController
                     preg_match('/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/', $_POST["email"])
                 ) {
 
+                    if ($_POST["nombre"] != "Admin"){
+                        echo '<script>
+                        window.location.href = "actualizado_error";
+                       </script>';
+                    } else {
+                        
+                    
+
                     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
                     $datos = array(
@@ -231,6 +246,7 @@ class MvcController
                     );
 
                     $respuesta = Datos::actualizarUsuarioModel($datos, "usuarios");
+                }
 
                     if ($respuesta == "success") {
                         echo '<script>

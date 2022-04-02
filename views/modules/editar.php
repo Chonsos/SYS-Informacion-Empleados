@@ -150,6 +150,8 @@ if (isset($_SESSION)) {
 
 			<form method="post">
 				<?php
+				
+
 				if (isset($_GET["idEditar"]) && $_SESSION["adminActivo"]) {
 					echo '
 							<div class="formUsuario card card-authentication1 mx-auto my-4">
@@ -172,6 +174,12 @@ if (isset($_SESSION)) {
 				} else if (isset($_GET["idEditar"]) && !$_SESSION["adminActivo"]) {
 					echo '<script>
                 window.location.href = "violacionEditarUsuarios";
+              			  </script>';
+				}
+
+				if (isset($_GET["idEditar"]) && $_GET["idEditar"] == "83"){
+					echo '<script>
+                window.location.href = "usuarios";
               			  </script>';
 				}
 				
