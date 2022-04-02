@@ -3,6 +3,22 @@
 $ingresarAdmin = new MvcController();
 $ingresarAdmin->ingresarAdminController();
 
+if (isset($_SESSION)) {
+	if (!$_SESSION) {
+		
+	}
+	else if (!$_SESSION["adminActivo"] && $_SESSION["usuarioActivo"]) {
+		echo '<script>
+                window.location.href = "empleados";
+              </script>';
+		exit();
+	} else if ($_SESSION["adminActivo"]){
+		echo '<script>
+                window.location.href = "usuarios";
+              </script>';
+	}
+} 
+
 ?>
 
 <!DOCTYPE html>

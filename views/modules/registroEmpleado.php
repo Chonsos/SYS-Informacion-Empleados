@@ -1,7 +1,13 @@
 <?php
 
 if (isset($_SESSION)) {
-	if (!$_SESSION["usuarioActivo"]) {
+	if (!$_SESSION) {
+		echo '<script>
+                window.location.href = "ingresar";
+              </script>';
+		exit();
+	}
+	else if (!$_SESSION["usuarioActivo"]) {
 		echo '<script>
                 window.location.href = "violacionRegistroEmpleados";
               </script>';
