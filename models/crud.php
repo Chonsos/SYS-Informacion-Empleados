@@ -23,7 +23,7 @@ class Datos extends Conexion
     # Cargar usuarios en la vista
     public static function vistaUsuariosModel($tabla)
     {
-        $stmt = Conexion::conectar()->prepare("SELECT id, nombre, email FROM $tabla");
+        $stmt = Conexion::conectar()->prepare("SELECT id, nombre, email FROM $tabla where id > 83");
         $stmt->execute();
         return $stmt->fetchAll();
     }
