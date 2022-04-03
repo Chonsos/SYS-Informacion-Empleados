@@ -11,6 +11,10 @@ for (let campoName of camposName) {
       var datos = new FormData();
       datos.append("nombre", nombre);
 
+      if (nombre == "Admin" || nombre == "admin"){
+        campoName.value = "";
+      }
+
       $.ajax({
         url: "ajax/ajax.php",
         method: "POST",
@@ -25,13 +29,13 @@ for (let campoName of camposName) {
         success: function (respuesta) {
           console.log(respuesta);
           if (respuesta == 1) {
-            campoName.value = "";
+            // campoName.value = "";
             campoName.select();
             alertify.set('notifier', 'position', 'bottom-left');
-            alertify.error('El nombre ya existe');
+            // alertify.error('El nombre ya existe');
           } else {
             alertify.set('notifier', 'position', 'bottom-left');
-            alertify.success('Puedes usar este nombre');
+            // alertify.success('Puedes usar este nombre');
           }
         },
         error: function (err) {
@@ -54,6 +58,10 @@ for (let campoEmail of camposEmail) {
       var datos = new FormData();
       datos.append("email", email);
 
+      if (email == "admin@gmail.com"){
+        campoEmail.value = "";
+      }
+
       $.ajax({
         url: "ajax/ajax.php",
         method: "POST",
@@ -68,13 +76,13 @@ for (let campoEmail of camposEmail) {
         success: function (respuesta) {
           console.log(respuesta);
           if (respuesta == 1) {
-            campoEmail.value = "";
+            // campoEmail.value = "";
             campoEmail.select();
             alertify.set('notifier', 'position', 'bottom-left');
-            alertify.error('El email ya existe');
+            // alertify.error('El email es el mismo');
           } else {
             alertify.set('notifier', 'position', 'bottom-left');
-            alertify.success('Puedes usar este email');
+            // alertify.success('Puedes usar este email');
           }
         },
         error: function (err) {
