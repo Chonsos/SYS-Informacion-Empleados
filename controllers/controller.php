@@ -42,7 +42,7 @@ class MvcController
                     preg_match('/^[A-Za-z0-9\-\_\.]{3,20}$/', $_POST["nombre"]) &&
                     preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/', $_POST["password"]) &&
                     preg_match('/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/', $_POST["email"])
-                ) {
+                ) { 
 
                     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
@@ -52,10 +52,8 @@ class MvcController
                         "email" => $_POST["email"],
                     );
 
-                    $_SESSION["user"] = $_POST["nombre"];
-
                     $respuesta = Datos::registroUsuarioModel($datos, "usuarios");
-
+                
                     if ($respuesta == "success") {
                         echo '<script>
                                         window.location.href = "registro_ok";
