@@ -438,7 +438,7 @@ class MvcController
                     preg_match('/^[A-Za-z0-9\s]{3,100}$/', $_POST["apellidos"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["familiares"]) &&
                     preg_match('/^[0-9\s\-\_\.\()\,]{3,100}$/', $_POST["telefonos"]) &&
-                    preg_match('/^[A-Za-z0-9\s]{1,100}$/', $_POST["vacaciones"]) &&
+                    preg_match('/^[0-9\s]{1,100}$/', $_POST["vacaciones"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["perfilAcademico"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["vacunas"]) &&
                     preg_match('/^[A-Za-z0-9\-]{3,100}$/', $_POST["cedula"]) &&
@@ -664,8 +664,8 @@ class MvcController
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()]{3,100}$/', $_POST["nombre"]) &&
                     preg_match('/^[A-Za-z0-9\s]{3,100}$/', $_POST["apellidos"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["familiares"]) &&
-                    preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["telefonos"]) &&
-                    preg_match('/^[A-Za-z0-9\s]{1,100}$/', $_POST["vacaciones"]) &&
+                    preg_match('/^[0-9\s\-\_\.\()\,]{3,100}$/', $_POST["telefonos"]) &&
+                    preg_match('/^[0-9\s]{1,100}$/', $_POST["vacaciones"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["perfilAcademico"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["vacunas"]) &&
                     preg_match('/^[A-Za-z0-9\-]{3,100}$/', $_POST["cedula"]) &&
