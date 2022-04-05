@@ -122,7 +122,7 @@ $(document).ready(function () {
                             <h6>Familiares:  ${empleado.familiares}  </h6>
                             <h6>Telefonos:  ${empleado.telefonos}  </h6>
                             <h6>Vacaciones:  ${empleado.vacaciones + " "} dias  </h6>
-                            <h6>Perfil_Academico:  ${empleado.perfilAcademico}  </h6>
+                            <h6>Perfil Academico:  ${empleado.perfilAcademico}  </h6>
                             <h6>Fecha de Ingreso:  ${empleado.fechaIngreso}  </h6>
                             <h6>Vacunas:  ${empleado.vacunas}  </h6>
                             <h6>Cedula:  ${empleado.cedula}  </h6>

@@ -225,12 +225,6 @@ class MvcController
                     preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/', $_POST["password"]) &&
                     preg_match('/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/', $_POST["email"])
                 ) {
-
-                    if ($_POST["nombre"] != "Admin"){
-                        echo '<script>
-                        window.location.href = "actualizado_error";
-                       </script>';
-                    } else {
                         
                     
 
@@ -244,7 +238,7 @@ class MvcController
                     );
 
                     $respuesta = Datos::actualizarUsuarioModel($datos, "usuarios");
-                }
+                
 
                     if ($respuesta == "success") {
                         echo '<script>
@@ -443,7 +437,7 @@ class MvcController
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()]{3,100}$/', $_POST["nombre"]) &&
                     preg_match('/^[A-Za-z0-9\s]{3,100}$/', $_POST["apellidos"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["familiares"]) &&
-                    preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["telefonos"]) &&
+                    preg_match('/^[0-9\s\-\_\.\()\,]{3,100}$/', $_POST["telefonos"]) &&
                     preg_match('/^[A-Za-z0-9\s]{1,100}$/', $_POST["vacaciones"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["perfilAcademico"]) &&
                     preg_match('/^[A-Za-z0-9\s\-\_\.\()\,]{3,100}$/', $_POST["vacunas"]) &&
