@@ -251,12 +251,12 @@ if (isset($_GET["action"])) {
 	} else if ($_GET["action"] == "actualizado_error") {
 		echo '<script>
 				       alertify.set("notifier","position", "bottom-left");
-				       alertify.error("Ocurrio un error inesperado al actualizar al usuario");
+				       alertify.error("Ocurrio un error al actualizar al usuario");
                    </script>';
 	} else if ($_GET["action"] == "actualizado_error_invalido") {
 		echo '<script>
 	                   alertify.set("notifier","position", "bottom-left");
-	                   alertify.error("Ocurrio una invalidacion al actualizar, si persiste el problema llame a administracion para que le colaboren");
+	                   alertify.error("Ocurrio un error al actualizar al usuario, verifique bien sus datos");
 	</script>';
 	} else if ($_GET["action"] == "actualizado_error_vacio") {
 		echo '<script>

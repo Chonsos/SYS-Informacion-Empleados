@@ -313,7 +313,7 @@ if (isset($_GET["action"])) {
 	} else if ($_GET["action"] == "actualizadoEmpleado_error_invalido") {
 		echo '<script>
 				       alertify.set("notifier","position", "bottom-left");
-				       alertify.error("Ocurrio una invalidacion al actualizar, si persiste el problema llame a administracion para que le colaboren");
+				       alertify.error("Ocurrio un error al actualizar al empleado, verifique bien sus datos");
                    </script>';
 	} else if ($_GET["action"] == "actualizadoEmpleado_error_vacio") {
 		echo '<script>

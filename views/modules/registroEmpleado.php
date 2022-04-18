@@ -285,12 +285,12 @@ if (isset($_GET["action"])) {
 	if ($_GET["action"] == "registroEmpleado_error") {
 		echo '<script>
 alertify.set("notifier","position", "bottom-left");
-alertify.error("Ocurrio un error inesperado a la hora de registrar al empleado");
+alertify.error("Ocurrio un error a la hora de registrar al empleado");
 </script>';
 	} else if ($_GET["action"] == "registroEmpleado_error_invalido") {
 		echo '<script>
 alertify.set("notifier","position", "bottom-left");
-alertify.error("Ocurrio un error a la hora de registrar al empleado verifique bien sus datos con sus requisitos minimos");
+alertify.error("Ocurrio un error a la hora de registrar al empleado, verifique bien sus datos");
 </script>';
 	} else if ($_GET["action"] == "registroEmpleado_error_vacio") {
 		echo '<script>

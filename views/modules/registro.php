@@ -225,12 +225,12 @@ if (isset($_GET["action"])) {
 	if ($_GET["action"] == "registro_error") {
 		echo '<script>
 alertify.set("notifier","position", "bottom-left");
-alertify.error("Ocurrio un error a la hora de registrarse");
+alertify.error("Ocurrio un error a la hora de registrar al usuario");
 </script>';
 	} else if ($_GET["action"] == "registro_error_invalido") {
 		echo '<script>
 alertify.set("notifier","position", "bottom-left");
-alertify.error("Ocurrio un error a la hora de registrarse verifique bien sus datos");
+alertify.error("Ocurrio un error a la hora de registrar al usuario verifique bien sus datos");
 </script>';
 	} else if ($_GET["action"] == "registro_error_vacio") {
 		echo '<script>
