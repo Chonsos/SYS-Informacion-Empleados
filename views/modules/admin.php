@@ -223,7 +223,7 @@ if (isset($_GET["action"])) {
 	if ($_GET["action"] == "admin_error") {
 		echo '<script>
 				alertify.set("notifier","position", "bottom-left");
-				alertify.error("Verifique bien sus datos");
+				alertify.error("Ocurrio un error, verifique que los datos que ingresó sean los correctos");
               </script>';
 	} else if ($_GET["action"] == "admin_error_invalido") {
 		echo '<script>
