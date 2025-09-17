@@ -1,4 +1,4 @@
-# etapa-2
-Etapa 2 de Análisis y Diseño de Sistemas II (Sistema de información de empleados)
+Sistema de Informacion de Empleado Basico
 
-Este es el repositorio del proyecto de Analisis y Diseño de Sistemas II, se puede instalar por ejemplo por medio de la opcion de la carpeta ZIP, luego de tenerlo, debemos de ejecutar el servidor local y ya podemos ver el codigo funcionando. 
+Si se desea ejecutar el sistema, debe de ser a travez del servidor local de XAMPP en su maquina (Debe de tener descargado XAMPP) ya que no existe un dominio o hosting que lo mantenga
+Activar la ocpion Apache e Mysql para hacerlo funcionar en su totalidad, verificar que el puerto que posea a la hora de activar la BD no genere conflictos con otro entorno que use el mismo.
